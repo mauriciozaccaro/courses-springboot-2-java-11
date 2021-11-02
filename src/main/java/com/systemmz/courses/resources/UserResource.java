@@ -11,7 +11,7 @@ import com.systemmz.courses.entities.User;
 @RequestMapping(value = "/users")
 public class UserResource {
 
-	@GetMapping // Indica que o método responde a uma requisição GET do HTTP
+	@GetMapping // Indica que o método responde a uma requisição GET do HTTP... traz no "localhost:8080/users" um JSON do usuario "u"
 	public ResponseEntity<User> findAll(){
 		
 		User u = new User(1L, "Mauricio Neto", "neto.mauricio@unemat.br", "(66) 3439-5931", "264492");
